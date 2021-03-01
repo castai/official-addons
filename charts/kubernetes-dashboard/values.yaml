@@ -1,0 +1,4 @@
+kubernetes-dashboard:
+  image:
+    repository: kubernetesui/dashboard
+    tag: v2.2.0

@@ -4,6 +4,6 @@ target-branch: main
 chart-dirs:
   - charts
 chart-repos:
-  - grafana=https://castai.github.io/official-add-ons
+  - kubernetes-dashboard=https://kubernetes.github.io/dashboard/
 helm-extra-args: --timeout 600s
 validate-maintainers: false
