@@ -1,0 +1,19 @@
+apiVersion: v2
+name: kubernetes-dashboard
+version: 1.0.0
+description: General-purpose web UI for Kubernetes clusters
+keywords:
+  - kubernetes
+  - dashboard
+home: https://github.com/kubernetes/dashboard
+sources:
+  - https://github.com/kubernetes/dashboard
+maintainers:
+  - name: desaintmartin
+    email: cdesaintmartin@wiremind.fr
+icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: kubernetes-dashboard
+    version: 4.0.2
+    repository: https://kubernetes.github.io/dashboard/
