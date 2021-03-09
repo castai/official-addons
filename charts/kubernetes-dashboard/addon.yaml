@@ -1,14 +1,9 @@
 apiVersion: "v1"
-
 title: "Kubernetes Dashboard"
-
 shortDescription: "General-purpose web UI for Kubernetes clusters"
-
 longDescription: "Kubernetes Dashboard is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage applications running in the cluster and troubleshoot them, as well as manage the cluster itself."
-
 features:
   - Troubleshooting
   - Monitoring
-
 categories:
   - Tools
