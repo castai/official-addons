@@ -1,4 +1,6 @@
-name: "Kubernetes Dashboard"
+apiVersion: "v1"
+
+title: "Kubernetes Dashboard"
 
 shortDescription: "General-purpose web UI for Kubernetes clusters"
 
