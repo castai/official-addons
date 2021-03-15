@@ -1,0 +1,11 @@
+ingress-nginx:
+  controller:
+    replicaCount: 1
+    service:
+      type: LoadBalancer
+
+cert-manager:
+  replicaCount: 1
+  installCRDs: true
+  webhook:
+    timeoutSeconds: 30

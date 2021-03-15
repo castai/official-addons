@@ -1,0 +1,21 @@
+apiVersion: v2
+name: ingress-bundle
+version: 1.0.0
+description: Expose applications to the internet
+home: https://github.com/castai/official-addons
+sources:
+  - https://github.com/kubernetes/ingress-nginx
+  - https://github.com/jetstack/cert-manager
+  - https://docs.cast.ai/guides/ingress
+maintainers:
+  - name: castai
+    email: hello@cast.ai
+icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/ingress-nginx/icon.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: ingress-nginx
+    version: 3.24.0
+    repository: https://kubernetes.github.io/ingress-nginx/
+  - name: cert-manager
+    version: v1.2.0
+    repository: https://charts.jetstack.io/

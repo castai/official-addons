@@ -1,0 +1,11 @@
+apiVersion: v1
+title: Ingress Bundle
+shortDescription: Expose services to the internet
+longDescription: |
+  Ingress bundle comes with ingress-nginx and cert-manager kubernetes controllers to quickly and safely expose your services to the public internet.
+features:
+  - Ingress
+  - Load balancing
+  - TLS certificates
+categories:
+  - Networking
