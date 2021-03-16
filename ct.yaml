@@ -7,5 +7,6 @@ chart-repos:
   - kubernetes-dashboard=https://kubernetes.github.io/dashboard/
   - castai=https://castai.github.io/official-addons/
   - grafana=https://grafana.github.io/helm-charts/
+  - kedacore=https://kedacore.github.io/charts/
 helm-extra-args: --timeout 600s
 validate-maintainers: false
