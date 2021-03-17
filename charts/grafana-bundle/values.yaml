@@ -52,7 +52,6 @@ grafana:
           access: proxy
           isDefault: true
 
-
 # Dashboards are converted to config maps and imported to Grafana using it's sidecar.
 dashboards:
   etcd:
