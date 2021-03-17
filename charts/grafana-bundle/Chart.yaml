@@ -1,0 +1,23 @@
+apiVersion: v2
+name: grafana-bundle
+version: 1.0.0
+description: Open source observability platform
+home: https://github.com/castai/official-addons
+sources:
+  - https://grafana.com/
+  - https://github.com/jetstack/cert-manager
+maintainers:
+  - name: castai
+    email: hello@cast.ai
+icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/grafana-bundle/icon.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: grafana
+    version: 6.6.3
+    repository: "https://grafana.github.io/helm-charts/"
+  - name: loki
+    version: ^2.3.0
+    repository: "https://grafana.github.io/helm-charts/"
+  - name: promtail
+    version: ^2.2.0
+    repository: "https://grafana.github.io/helm-charts/"
