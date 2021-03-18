@@ -28,6 +28,28 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/grafana-bundle-1.0.0/grafana-bundle-1.0.0.tgz
     version: 1.0.0
+  keda:
+  - apiVersion: v2
+    created: "2021-03-18T10:40:45.361806441Z"
+    dependencies:
+    - name: keda
+      repository: https://kedacore.github.io/charts
+      version: 2.1.3
+    description: Event-based autoscaler for workloads on Kubernetes
+    digest: b90e17138d36ea4cbf29ac276d3cbf20a2dda0041bd15fbd8911f6aaa73fbc4a
+    home: https://github.com/castai/official-addons
+    icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/keda/icon.svg
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: hello@cast.ai
+      name: castai
+    name: keda
+    sources:
+    - https://github.com/kedacore/charts
+    - https://github.com/kedacore/keda
+    urls:
+    - https://github.com/castai/official-addons/releases/download/keda-1.0.0/keda-1.0.0.tgz
+    version: 1.0.0
   kubernetes-dashboard:
   - apiVersion: v2
     created: "2021-03-09T15:27:10.441448821Z"
@@ -75,4 +97,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-03-18T09:04:10.790133969Z"
+generated: "2021-03-18T10:40:45.361815841Z"
