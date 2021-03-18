@@ -1,0 +1,17 @@
+apiVersion: v2
+name: keda
+version: 1.0.0
+description: Event-based autoscaler for workloads on Kubernetes
+home: https://github.com/castai/official-addons
+sources:
+  - https://github.com/kedacore/charts
+  - https://github.com/kedacore/keda
+maintainers:
+  - name: castai
+    email: hello@cast.ai
+icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/keda/icon.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: keda
+    version: 2.1.3
+    repository: https://kedacore.github.io/charts
