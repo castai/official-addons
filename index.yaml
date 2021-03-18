@@ -28,6 +28,32 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/grafana-bundle-1.0.0/grafana-bundle-1.0.0.tgz
     version: 1.0.0
+  ingress-bundle:
+  - apiVersion: v2
+    created: "2021-03-18T10:50:12.226060601Z"
+    dependencies:
+    - name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx/
+      version: 3.24.0
+    - name: cert-manager
+      repository: https://charts.jetstack.io/
+      version: v1.2.0
+    description: Expose applications to the internet
+    digest: 3200f3e0146306c7799c4706b3db1c39128655b0b85daf4f98b6a86b4c3b0668
+    home: https://github.com/castai/official-addons
+    icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/ingress-nginx/icon.svg
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: hello@cast.ai
+      name: castai
+    name: ingress-bundle
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    - https://github.com/jetstack/cert-manager
+    - https://docs.cast.ai/guides/ingress
+    urls:
+    - https://github.com/castai/official-addons/releases/download/ingress-bundle-1.0.0/ingress-bundle-1.0.0.tgz
+    version: 1.0.0
   keda:
   - apiVersion: v2
     created: "2021-03-18T10:40:45.361806441Z"
@@ -97,4 +123,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-03-18T10:40:45.361815841Z"
+generated: "2021-03-18T10:50:12.226076401Z"
