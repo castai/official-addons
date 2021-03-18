@@ -8,5 +8,7 @@ chart-repos:
   - castai=https://castai.github.io/official-addons/
   - grafana=https://grafana.github.io/helm-charts/
   - kedacore=https://kedacore.github.io/charts/
+  - ingress-nginx=https://kubernetes.github.io/ingress-nginx/
+  - jetstack=https://charts.jetstack.io
 helm-extra-args: --timeout 600s
 validate-maintainers: false
