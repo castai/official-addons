@@ -1,0 +1,12 @@
+apiVersion: v1
+title: Grafana Bundle
+shortDescription: Open source observability platform
+longDescription: |
+  Grafana bundle comes with Grafana dashboard and Grafana Loki engine for collecting and quering logs.
+  It also integrates with default CAST AI Prometheus server which is installed automatically during cluster creation.
+features:
+  - Visualize metrics, logs, alerts and much more
+  - Logs collection
+  - External plugins
+categories:
+  - Observability
