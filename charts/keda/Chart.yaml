@@ -1,6 +1,6 @@
 apiVersion: v2
 name: keda
-version: 1.0.0-beta1
+version: 1.0.0
 description: Event-based autoscaler for workloads on Kubernetes
 home: https://github.com/castai/official-addons
 sources:
