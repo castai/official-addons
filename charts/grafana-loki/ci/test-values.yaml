@@ -1,0 +1,3 @@
+loki:
+  persistence:
+    enabled: false
