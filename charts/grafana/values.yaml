@@ -48,7 +48,7 @@ grafana:
           access: proxy
         - name: Loki
           type: loki
-          url: http://loki.loki:3100
+          url: http://loki.grafana-loki:3100
           access: proxy
           isDefault: true
 
