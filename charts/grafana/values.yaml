@@ -1,0 +1,61 @@
+grafana:
+  fullnameOverride: grafana
+  grafana.ini:
+    server:
+      serve_from_sub_path: true
+      root_url: /api/v1/namespaces/grafana/services/http:grafana:80/proxy/
+    analytics:
+      check_for_updates: false
+    grafana_net:
+      url: https://grafana.net
+    log:
+      mode: console
+    paths:
+      data: /var/lib/grafana/data
+      logs: /var/log/grafana
+      plugins: /var/lib/grafana/plugins
+      provisioning: /etc/grafana/provisioning
+    auth.anonymous:
+      enabled: true
+      org_name: Main Org.
+      org_role: Admin
+    users:
+      default_theme: light
+  sidecar:
+    imagePullPolicy: IfNotPresent
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 3000
+    portName: http
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server.castai-prometheus:9090
+          access: proxy
+        - name: Loki
+          type: loki
+          url: http://loki.grafana-loki:3100
+          access: proxy
+          isDefault: true
+
+dashboards:
+  etcd:
+    file: dashboards/etcd.json
+  ingress-nginx:
+    file: dashboards/ingress-nginx.json
+  kubernetes:
+    file: dashboards/kubernetes.json

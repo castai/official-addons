@@ -1,0 +1,25 @@
+{{- if .Values.dashboards }}
+
+{{ $files := .Files }}
+{{ $release := .Release }}
+{{ $chart := .Chart }}
+{{- range $key, $value := .Values.dashboards }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboards-{{ $key }}
+  labels:
+    app.kubernetes.io/managed-by: {{ $release.Service | quote }}
+    app.kubernetes.io/instance: {{ $release.Name | quote }}
+    helm.sh/chart: "{{ $chart.Name }}-{{ $chart.Version }}"
+    dashboard-provider: default
+    grafana_dashboard: "1"
+data:
+{{ print $key | indent 2 }}.json:
+{{- if hasKey $value "file" }}
+{{ toYaml ( $files.Get $value.file ) | indent 4}}
+{{- end }}
+
+---
+{{- end }}
+{{- end }}

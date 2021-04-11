@@ -1,0 +1,11 @@
+apiVersion: v1
+title: Grafana
+shortDescription: The open observability platform
+longDescription: |
+  Grafana is the world’s most popular technology used to compose observability dashboards with everything from Prometheus & Graphite metrics, to logs and application data to power plants and beehives.
+features:
+  - Visualize metrics, logs, alerts and much more
+  - Logs collection
+  - External plugins
+categories:
+  - Observability
