@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "{{ .Release.Name }}-wait-webhook-ready"
+  labels:
+    app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
+    app.kubernetes.io/instance: {{ .Release.Name | quote }}
+    helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+  annotations:
+    "helm.sh/hook": post-install
+    "helm.sh/hook-weight": "1"
+spec:
+  template:
+    spec:
+      containers:
+        - name: curl
+          image: curlimages/curl
+          command:
+            - "sh"
+            - "-c"
+            - |
+              curl \
+                --max-time 10 \
+                --retry 5 \
+                --retry-delay 5 \
+                --retry-connrefused \
+                "http://{{ .Release.Name }}-webhook-health:6080/healthz"
+              sleep 5
+      restartPolicy: Never

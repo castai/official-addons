@@ -1,0 +1,5 @@
+cert-manager:
+  replicaCount: 1
+  installCRDs: true
+  webhook:
+    timeoutSeconds: 30

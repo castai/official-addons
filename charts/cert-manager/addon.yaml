@@ -1,0 +1,10 @@
+apiVersion: v1
+title: Cert Manager
+shortDescription: Automatically provision and manage TLS certificates in Kubernetes
+longDescription: |
+  Cert Manager is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.
+  It will ensure certificates are valid and up to date periodically, and attempt to renew certificates at an appropriate time before expiry.
+features:
+  - TLS certificates
+categories:
+  - Tools
