@@ -1,0 +1,18 @@
+apiVersion: v2
+name: grafana
+version: 1.0.0
+description: Open source observability platform
+home: https://github.com/castai/official-addons
+sources:
+  - https://grafana.com/
+  - https://github.com/jetstack/cert-manager
+maintainers:
+  - name: castai
+    email: hello@cast.ai
+icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/grafana/icon.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: grafana
+    version: 6.6.3
+    repository: "https://grafana.github.io/helm-charts/"
+
