@@ -2,4 +2,4 @@ ingress-nginx:
   controller:
     replicaCount: 1
     service:
-      type: LoadBalancer  # Load balancer is automatically provisioned by CAST AI service operator.
+      type: LoadBalancer
