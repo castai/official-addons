@@ -2,4 +2,4 @@ ingress-nginx:
   controller:
     replicaCount: 1
     service:
-      type: ClusterIP # During tests using ClusterIP service as it can't create real cloud load balancers.
+      type: ClusterIP  # During tests using ClusterIP service as it can't create real cloud load balancers.
