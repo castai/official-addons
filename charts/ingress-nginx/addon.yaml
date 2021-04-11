@@ -1,0 +1,10 @@
+apiVersion: v1
+title: Ingress Nginx
+shortDescription: Expose services to the internet
+longDescription: |
+  Quickly and safely expose your services to the public internet using Ingress Nginx Kubernetes controller.
+features:
+  - Ingress
+  - Load balancing
+categories:
+  - Networking
