@@ -1,0 +1,18 @@
+apiVersion: v2
+name: cert-manager
+version: 1.0.0
+description: Automatically provision and manage TLS certificates in Kubernetes
+home: https://github.com/castai/official-addons
+sources:
+  - https://github.com/jetstack/cert-manager
+  - https://docs.cast.ai/guides/ingress
+  - https://github.com/castai/official-addons
+maintainers:
+  - name: castai
+    email: hello@cast.ai
+icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/cert-manager/icon.svg
+kubeVersion: ">=1.14.0-0"
+dependencies:
+  - name: cert-manager
+    version: v1.2.0
+    repository: https://charts.jetstack.io/
