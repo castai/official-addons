@@ -1,6 +1,6 @@
 apiVersion: v2
 name: ingress-nginx
-version: 1.0.1
+version: 1.0.2
 description: Expose applications to the internet
 home: https://github.com/castai/official-addons
 sources:
