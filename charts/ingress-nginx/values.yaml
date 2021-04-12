@@ -3,3 +3,19 @@ ingress-nginx:
     replicaCount: 1
     service:
       type: LoadBalancer
+    admissionWebhooks:
+      patch:
+        tolerations:
+          - key: "topology.cast.ai/csp"
+            operator: "Exists"
+            effect: "NoSchedule"
+    affinity:
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+                - key: app.kubernetes.io/name
+                  operator: In
+                  values:
+                    - ingress-nginx
+            topologyKey: "topology.cast.ai/csp"
