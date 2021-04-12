@@ -4,8 +4,7 @@ ingress-nginx:
     service:
       type: LoadBalancer
     admissionWebhooks:
-      patch:
-        enabled: false
+      enabled: false
     affinity:
       podAntiAffinity:
         requiredDuringSchedulingIgnoredDuringExecution:
