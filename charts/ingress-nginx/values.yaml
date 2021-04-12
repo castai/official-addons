@@ -4,11 +4,7 @@ ingress-nginx:
     service:
       type: LoadBalancer
     admissionWebhooks:
-      patch:
-        tolerations:
-          - key: "topology.cast.ai/csp"
-            operator: "Exists"
-            effect: "NoSchedule"
+      enabled: false
     affinity:
       podAntiAffinity:
         requiredDuringSchedulingIgnoredDuringExecution:
