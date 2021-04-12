@@ -15,3 +15,9 @@ ingress-nginx:
                   values:
                     - ingress-nginx
             topologyKey: "topology.cast.ai/csp"
+    metrics:
+      enabled: true
+      service:
+        annotations:
+          prometheus.io/scrape: "true"
+          prometheus.io/port: "10254"
