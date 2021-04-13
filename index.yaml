@@ -152,6 +152,27 @@ entries:
     version: 1.0.0
   ingress-nginx:
   - apiVersion: v2
+    created: "2021-04-13T09:04:35.810178025Z"
+    dependencies:
+    - name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx/
+      version: 3.24.0
+    description: Expose applications to the internet
+    digest: 31c05389c9b2ffa91ff9ba1d5eaf7e53771cc884bae3756a61b2a03a0c53c3f0
+    home: https://github.com/castai/official-addons
+    icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/ingress-nginx/icon.svg
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: hello@cast.ai
+      name: castai
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    - https://docs.cast.ai/guides/ingress
+    urls:
+    - https://github.com/castai/official-addons/releases/download/ingress-nginx-1.0.4/ingress-nginx-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
     created: "2021-04-12T12:11:22.064851702Z"
     dependencies:
     - name: ingress-nginx
@@ -304,4 +325,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-04-12T12:11:22.064876902Z"
+generated: "2021-04-13T09:04:35.810504728Z"
