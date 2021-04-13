@@ -3,6 +3,10 @@ ingress-nginx:
     replicaCount: 1
     service:
       type: LoadBalancer
+      annotations:
+        service.kubernetes.io/loadbalancer-healthcheck-protocol: "https"
+        service.kubernetes.io/loadbalancer-healthcheck-port: "443"
+        service.kubernetes.io/loadbalancer-healthcheck-path: "/healthz"
     admissionWebhooks:
       enabled: false
     affinity:
