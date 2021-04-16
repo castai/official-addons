@@ -23,6 +23,17 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/cert-manager-1.0.0/cert-manager-1.0.0.tgz
     version: 1.0.0
+  evictor:
+  - apiVersion: v2
+    appVersion: 0.1.0-alpha2
+    created: "2021-04-16T12:17:11.986246571Z"
+    description: Cluster utilization defragmentation tool
+    digest: 03a9507fbd90162ba9f9708f29620bfb0bad2e3e47446f126ded89d450e653c0
+    name: evictor
+    type: application
+    urls:
+    - https://github.com/castai/official-addons/releases/download/evictor-0.1.0/evictor-0.1.0.tgz
+    version: 0.1.0
   grafana:
   - apiVersion: v2
     created: "2021-04-11T18:11:24.307462479Z"
@@ -325,4 +336,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-04-13T09:04:35.810504728Z"
+generated: "2021-04-16T12:17:11.986266972Z"
