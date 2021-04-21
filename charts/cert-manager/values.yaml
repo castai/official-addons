@@ -3,3 +3,10 @@ cert-manager:
   installCRDs: true
   webhook:
     timeoutSeconds: 30
+
+clusterIssuer:
+  enabled: true
+  solvers:
+    - http01:
+        ingress:
+          class: nginx

@@ -1,6 +1,6 @@
 apiVersion: v2
 name: cert-manager
-version: 1.0.0
+version: 1.0.1
 description: Automatically provision and manage TLS certificates in Kubernetes
 home: https://github.com/castai/official-addons
 sources:
