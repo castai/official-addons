@@ -12,7 +12,7 @@ This guide will show how to setup s3 object storage to store loki chunks and ind
 
 ```sh
 helm upgrade grafana-bundle castai/grafana-bundle \
-  -n=grafana-bundle \
+  -n grafana-bundle \
   -f loki-s3.yaml \
   --set "loki.config.storage_config.aws.bucketnames=MY_BUCKET_NAME" \
   --set "loki.config.storage_config.aws.region=MY_REGION" \
