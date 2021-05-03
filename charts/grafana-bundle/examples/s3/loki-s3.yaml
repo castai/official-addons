@@ -1,0 +1,43 @@
+loki:
+  fullnameOverride: loki
+  enabled: true
+  config:
+    limits_config:
+      enforce_metric_name: false
+      reject_old_samples: true
+      reject_old_samples_max_age: 720h
+    schema_config:
+      configs:
+        - from: 2021-01-01
+          store: boltdb-shipper
+          object_store: s3
+          schema: v11
+          index:
+            period: 24h
+            prefix: index_
+    storage_config:
+      boltdb_shipper:
+        active_index_directory: /data/loki/boltdb-shipper-active
+        cache_location: /data/loki/boltdb-shipper-cache
+        cache_ttl: 24h
+        shared_store: s3
+      aws:
+        bucketnames: bucket_name1
+        region: s3_region
+        access_key_id: s3_access_key_id
+        secret_access_key: s3_secret_access_key
+        insecure: false
+        sse_encryption: false
+        http_config:
+          idle_conn_timeout: 90s
+          response_header_timeout: 0s
+          insecure_skip_verify: false
+        s3forcepathstyle: true
+    chunk_store_config:
+      max_look_back_period: 720h
+    table_manager:
+      retention_deletes_enabled: true
+      retention_period: 720h
+    compactor:
+      working_directory: /data/loki/boltdb-shipper-compactor
+      shared_store: s3
