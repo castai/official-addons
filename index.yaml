@@ -68,6 +68,27 @@ entries:
     version: 0.1.0
   grafana:
   - apiVersion: v2
+    created: "2021-05-13T18:26:49.768662381Z"
+    dependencies:
+    - name: grafana
+      repository: https://grafana.github.io/helm-charts/
+      version: 6.9.0
+    description: Open source observability platform
+    digest: e75fb67bed105b0b87a1dd15f925a7d8800e98b1b226784a7890dbc7a745df2b
+    home: https://github.com/castai/official-addons
+    icon: https://raw.githubusercontent.com/castai/official-addons/main/charts/grafana/icon.svg
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: hello@cast.ai
+      name: castai
+    name: grafana
+    sources:
+    - https://grafana.com/
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://github.com/castai/official-addons/releases/download/grafana-1.1.1/grafana-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     created: "2021-04-11T18:11:24.307462479Z"
     dependencies:
     - name: grafana
@@ -389,4 +410,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-05-13T07:49:33.355399045Z"
+generated: "2021-05-13T18:26:49.768688382Z"
