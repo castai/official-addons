@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "permissions",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "MY_ARN"
+      },
+      "Action": [
+        "s3:ListBucket",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::MY_BUCKET",
+        "arn:aws:s3:::MY_BUCKET/*"
+      ]
+    }
+  ]
+}
