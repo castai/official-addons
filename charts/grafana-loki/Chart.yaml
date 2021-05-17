@@ -1,6 +1,6 @@
 apiVersion: v2
 name: grafana-loki
-version: 1.0.0
+version: 2.0.0
 description: Fully featured logging stack
 home: https://github.com/castai/official-addons
 sources:
@@ -12,8 +12,8 @@ icon: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.pn
 kubeVersion: ">=1.14.0-0"
 dependencies:
   - name: loki
-    version: ^2.3.0
+    version: ^2.5.0
     repository: "https://grafana.github.io/helm-charts/"
   - name: promtail
-    version: ^2.2.0
+    version: ^3.5.1
     repository: "https://grafana.github.io/helm-charts/"
