@@ -166,6 +166,29 @@ entries:
     version: 1.0.0
   grafana-loki:
   - apiVersion: v2
+    created: "2021-05-17T11:49:48.006594406Z"
+    dependencies:
+    - name: loki
+      repository: https://grafana.github.io/helm-charts/
+      version: ^2.5.0
+    - name: promtail
+      repository: https://grafana.github.io/helm-charts/
+      version: ^3.5.1
+    description: Fully featured logging stack
+    digest: 48a10529accfbbccf000bb580cba733da2fa6dacab98a19abf5eaa52ee6a54c7
+    home: https://github.com/castai/official-addons
+    icon: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: hello@cast.ai
+      name: castai
+    name: grafana-loki
+    sources:
+    - https://grafana.com/docs/loki/latest/overview/
+    urls:
+    - https://github.com/castai/official-addons/releases/download/grafana-loki-2.0.0/grafana-loki-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
     created: "2021-04-11T18:32:48.191994408Z"
     dependencies:
     - name: loki
@@ -410,4 +433,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-05-13T18:26:49.768688382Z"
+generated: "2021-05-17T11:49:48.006620406Z"
