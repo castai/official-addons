@@ -47,6 +47,16 @@ entries:
     version: 1.0.0
   evictor:
   - apiVersion: v2
+    appVersion: 0.1.0-alpha7
+    created: "2021-06-16T08:48:54.168503432Z"
+    description: Cluster utilization defragmentation tool
+    digest: 6715c96acb0b0109d5a9bbd534a924d5137bca9885a93ac23f2f2c9ecec76abd
+    name: evictor
+    type: application
+    urls:
+    - https://github.com/castai/official-addons/releases/download/evictor-0.1.6/evictor-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 0.1.0-alpha6
     created: "2021-06-15T10:17:34.801474284Z"
     description: Cluster utilization defragmentation tool
@@ -476,4 +486,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-06-15T10:17:34.801517184Z"
+generated: "2021-06-16T08:48:54.168539432Z"
