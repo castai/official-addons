@@ -9,6 +9,15 @@ replicaCount: 1
 # instead of actually performing them.
 dryRun: false
 
+# Specifies leader election parameters
+leaderElection:
+  # Whether to enable leader election
+  enabled: true
+
+# Controls `deployment.spec.strategy` field
+updateStrategy:
+  type: Recreate
+
 image:
   repository: castai/evictor
   pullPolicy: IfNotPresent

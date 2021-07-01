@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "evictor.labels" . | nindent 4 }}
 spec:
+  strategy:
+    {{- .Values.updateStrategy | toYaml | nindent 4 }}
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
@@ -31,7 +33,7 @@ spec:
             - name: IN_CLUSTER
               value: "true"
             - name: LEADER_ELECTION_ENABLED
-              value: "true"
+              value: {{ .Values.leaderElection.enabled | quote }}
             - name: LEADER_ELECTION_NAMESPACE
               valueFrom:
                 fieldRef:
