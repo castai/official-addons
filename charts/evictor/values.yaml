@@ -76,3 +76,6 @@ tolerations: []
   #  effect: NoSchedule
 
 affinity: {}
+
+# Used to set any additional environment variables
+additionalEnv: {}
