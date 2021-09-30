@@ -536,4 +536,19 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/kubernetes-dashboard-1.0.1/kubernetes-dashboard-1.0.1.tgz
     version: 1.0.1
-generated: "2021-09-06T14:33:42.439542212Z"
+  metrics-server:
+  - apiVersion: v2
+    created: "2021-09-30T12:56:32.701548612Z"
+    description: Kubernetes Metrics Server
+    digest: b50a11a38600a61f3894610e68992441f9406e2f6fe6d1232339b605edfd699e
+    home: https://github.com/castai/official-addons
+    keywords:
+    - kubernetes
+    - metrics
+    name: metrics-server
+    sources:
+    - https://github.com/castai/official-addons
+    urls:
+    - https://github.com/castai/official-addons/releases/download/metrics-server-1.0.0/metrics-server-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-09-30T12:56:32.701647619Z"
