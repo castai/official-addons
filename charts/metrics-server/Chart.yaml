@@ -1,0 +1,10 @@
+apiVersion: v2
+name: metrics-server
+version: 1.0.0
+description: Kubernetes Metrics Server
+keywords:
+  - kubernetes
+  - metrics
+home: https://github.com/castai/official-addons
+sources:
+  - https://github.com/castai/official-addons
