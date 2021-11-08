@@ -1,6 +1,6 @@
 apiKey: "test"
 apiURL: "test"
-provider: "test"
+provider: "eks"
 cvpaEnabled: false
 resources:
   requests:

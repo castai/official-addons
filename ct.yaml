@@ -6,7 +6,7 @@ chart-dirs:
 chart-repos:
   - kubernetes-dashboard=https://kubernetes.github.io/dashboard/
   - castai=https://castai.github.io/official-addons/
-#  - grafana=https://grafana.github.io/helm-charts/
+  - grafana=https://grafana.github.io/helm-charts/
   - kedacore=https://kedacore.github.io/charts/
   - ingress-nginx=https://kubernetes.github.io/ingress-nginx/
   - jetstack=https://charts.jetstack.io
