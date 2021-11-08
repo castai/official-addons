@@ -1,3 +1,11 @@
 apiKey: "test"
 apiURL: "test"
 provider: "test"
+cvpaEnabled: false
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 1000m
+    memory: 256Mi
