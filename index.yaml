@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  castai-agent:
+  - apiVersion: v2
+    appVersion: v0.22.1
+    created: "2021-11-10T11:28:44.313746403Z"
+    description: CAST AI agent deployment chart.
+    digest: da59edaf154b7aa9a10965a487a5e4437a38c381b6cd2d82bf8723556a3b4566
+    name: castai-agent
+    type: application
+    urls:
+    - https://github.com/castai/official-addons/releases/download/castai-agent-0.4.0/castai-agent-0.4.0.tgz
+    version: 0.4.0
   cert-manager:
   - apiVersion: v2
     created: "2021-04-21T12:17:18.618194408Z"
@@ -561,4 +572,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/metrics-server-1.0.0/metrics-server-1.0.0.tgz
     version: 1.0.0
-generated: "2021-10-01T12:32:17.667057131Z"
+generated: "2021-11-10T11:28:44.313809203Z"
