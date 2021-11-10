@@ -1,4 +1,4 @@
-{{- if .Values.cvpaEnabled }}
+{{- if .Values.clusterVPA.enabled }}
 ---
 apiVersion: v1
 kind: ConfigMap

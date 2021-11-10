@@ -1,7 +1,8 @@
 apiKey: "test"
 apiURL: "test"
 provider: "eks"
-cvpaEnabled: false
+clusterVPA:
+  enabled: false
 resources:
   requests:
     cpu: 100m

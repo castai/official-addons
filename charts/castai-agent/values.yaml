@@ -28,7 +28,8 @@ podAnnotations: {}
 
 # Should the cluster proportional vertical autoscaler be enabled for the agent deployment
 # https://github.com/kubernetes-sigs/cluster-proportional-vertical-autoscaler
-cvpaEnabled: true
+clusterVPA:
+  enabled: true
 
 resources: {}
 

@@ -86,7 +86,7 @@ subjects:
     name: {{ include "castai-agent.serviceAccountName" . }}
     namespace: {{ .Values.namespace }}
 
-{{- if .Values.cvpaEnabled }}
+{{- if .Values.clusterVPA.enabled }}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role

@@ -38,8 +38,8 @@ spec:
           envFrom:
             - secretRef:
                 name: {{ include "castai-agent.fullname" . -}}
-          {{/* we don't set resources if CVPA is enabled */}}
-          {{- if not .Values.cvpaEnabled }}
+          {{/* we don't set resources if Cluster proportional vertical autoscaler is enabled */}}
+          {{- if not .Values.clusterVPA.enabled }}
           resources:
             {{- .Values.resources | toYaml | nindent 14 }}
           {{- else }}
@@ -50,7 +50,7 @@ spec:
             limits:
               cpu: 1000m
           {{- end }}
-        {{- if .Values.cvpaEnabled }}
+        {{- if .Values.clusterVPA.enabled }}
         - name: autoscaler
           image: k8s.gcr.io/cpvpa-amd64:v0.8.3
           command:
@@ -63,7 +63,7 @@ spec:
             - mountPath: /etc/config
               name: autoscaler-config
         {{- end }}
-      {{- if .Values.cvpaEnabled }}
+      {{- if .Values.clusterVPAenabled }}
       volumes:
       - name: autoscaler-config
         configMap:
