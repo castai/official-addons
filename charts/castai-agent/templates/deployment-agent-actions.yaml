@@ -41,6 +41,6 @@ spec:
                 name: castai-agent-actions
           {{- with .Values.agentActions.resources }}
           resources:
-          {{- toYaml . | nindent 10 }}
+          {{- toYaml . | nindent 12 }}
           {{- end }}
 {{- end }}

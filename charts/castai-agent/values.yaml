@@ -55,7 +55,7 @@ agentActions:
   additionalEnv: {}
   image:
     repository: castai/agent-actions
-    tag: v0.0.0-alpha1
+    tag: v0.0.0-alpha2
     pullPolicy: IfNotPresent
   resources:
     requests:
