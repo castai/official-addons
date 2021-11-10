@@ -40,7 +40,7 @@ additionalEnv:
 apiKey: ""
 
 # URL to the API server
-apiURL: "api.cast.ai"
+apiURL: ""
 
 # Name of the Kubernetes service provider
 # one of: "eks", "gks", "aks", "kops"
@@ -49,10 +49,12 @@ provider: ""
 # Agent actions are responsible for write operations including drain, patch, delete node.
 agentActions:
   enabled: false
-  apiTelemetryURL: "telemetry.cast.ai"
+  apiTelemetryURL: ""
   clusterID: ""
   podAnnotations: {}
-  additionalEnv: {}
+  additionalEnv:
+    PPROF_PORT: "6060"
+    LOG_LEVEL: "5"
   image:
     repository: castai/agent-actions
     tag: v0.0.0-alpha2

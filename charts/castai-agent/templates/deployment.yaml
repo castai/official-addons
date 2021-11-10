@@ -63,7 +63,7 @@ spec:
             - mountPath: /etc/config
               name: autoscaler-config
         {{- end }}
-      {{- if .Values.clusterVPAenabled }}
+      {{- if .Values.clusterVPA.enabled }}
       volumes:
       - name: autoscaler-config
         configMap:
