@@ -58,6 +58,16 @@ entries:
     version: 1.0.0
   evictor:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2021-12-16T13:18:12.41383223Z"
+    description: Cluster utilization defragmentation tool
+    digest: fda3ad399ae4f6847b7b544c963e1f839654ea46c9997358aa1ce35eac1f1fe2
+    name: evictor
+    type: application
+    urls:
+    - https://github.com/castai/official-addons/releases/download/evictor-0.6.0/evictor-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     appVersion: 0.1.0-alpha11
     created: "2021-10-01T12:32:17.666970832Z"
     description: Cluster utilization defragmentation tool
@@ -572,4 +582,4 @@ entries:
     urls:
     - https://github.com/castai/official-addons/releases/download/metrics-server-1.0.0/metrics-server-1.0.0.tgz
     version: 1.0.0
-generated: "2021-11-10T11:28:44.313809203Z"
+generated: "2021-12-16T13:18:12.413918729Z"
