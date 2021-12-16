@@ -9,6 +9,11 @@ replicaCount: 1
 # instead of actually performing them.
 dryRun: false
 
+# Specifies whether the Evictor can behave as aggressive
+# if true, evictor will start considering single replica pods
+# as long as they can be scheduled somewhere else.
+aggressiveMode: false
+
 # Specifies leader election parameters
 leaderElection:
   # Whether to enable leader election
