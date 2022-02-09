@@ -14,6 +14,10 @@ dryRun: false
 # as long as they can be scheduled somewhere else.
 aggressiveMode: false
 
+# Specifies whether the Evictor can behave in a scoped manner
+# if true, evictor will only evict nodes that are created by CAST AI
+scopedMode: false
+
 # Specifies leader election parameters
 leaderElection:
   # Whether to enable leader election
