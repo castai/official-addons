@@ -45,6 +45,8 @@ spec:
               value: {{ .Values.dryRun | quote }}
             - name: AGGRESSIVE_MODE
               value: {{ .Values.aggressiveMode | quote }}
+            - name: SCOPED_MODE
+              value: {{ .Values.scopedMode | quote }}
             {{- range $name, $value := .Values.additionalEnv }}
             - name: "{{ $name }}"
               value: "{{ $value }}"
