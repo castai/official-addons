@@ -47,6 +47,8 @@ spec:
               value: {{ .Values.aggressiveMode | quote }}
             - name: SCOPED_MODE
               value: {{ .Values.scopedMode | quote }}
+            - name: NODE_GRACE_PERIOD_MINUTES
+              value: {{ .Values.nodeGracePeriodMinutes | quote }}
             {{- range $name, $value := .Values.additionalEnv }}
             - name: "{{ $name }}"
               value: "{{ $value }}"
